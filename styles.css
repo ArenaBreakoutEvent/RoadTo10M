@@ -5,7 +5,7 @@
 /* Aplica la fuente a toda la página */
 body {
   font-family: 'MiFuente', sans-serif; /* Usa la fuente personalizada */
-  background-color: #2d78aa;
+  background-color: #00060a;
   margin: 0px; /* Elimina márgenes por defecto */
   padding: 0px; /* Elimina paddings por defecto */}
 /* Barra de navegación */
@@ -159,20 +159,64 @@ background-color: azu;
 }
 
 .fondotetera {
-  width: 100vw; /* Todo el ancho del viewport */
-  height: 300px; /* Altura del contenedor */
-  background-image: url('img/tetera.png'); /* Ruta de la imagen */
-  background-size: cover; /* Imagen cubre todo el contenedor */
-  background-repeat: no-repeat; /* Evitar repeticiones */
-  background-position: right top; /* Imagen a sangre a la derecha y arriba */
-  margin: 0; /* Elimina márgenes globales */
-  padding: 0; /* Elimina relleno global */
+  background-image: url('img/tetera.png'); /* Imagen de fondo */
+  background-size: cover; /* Imagen cubre el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: right top; /* Imagen posicionada a la derecha y arriba */
+  margin: 0; /* Sin márgenes */
+  padding: 0; /* Sin relleno */
 }
 
-.fondotetera .col-8 {
+.fondotetera .blanco {
   background-color: rgba(255, 255, 255, 0); /* Fondo blanco semitransparente */
-  padding: 20px; /* Añade espacio dentro del bloque de texto */
-  border-radius: 5px; /* Suaviza bordes para un diseño limpio */
-  margin-left: 20px; /* Separa el bloque de texto del borde izquierdo */
-  height: auto; /* Permite que crezca con el contenido */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  height: auto; /* Crece según el contenido */
+}
+
+h1.ti {
+  font-size: 1.8rem; /* Tamaño del título */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+p.te {
+  font-size: 1rem; /* Tamaño del texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .fondotetera {
+    height: auto; /* Ajusta la altura automáticamente */
+    padding: 20px 0; /* Añade espacio vertical en móviles */
+  }
+
+  .fondotetera .blanco {
+    margin: 0 auto; /* Centra el bloque en pantallas pequeñas */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 15px; /* Reduce el espaciado interno */
+  }
+
+  h1.ti {
+    font-size: 1.5rem; /* Ajusta el tamaño del título en móviles */
+  }
+
+  p.te {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+}
+
+.vol {
+  background-image: url('img/fondo2.png'); /* Imagen de fondo */
+}
+
+.jornada {
+  justify-content: center;
+  height: 130px;
+  width: auto;
+}
+
+.jornadas-extra {
+  transition: all 0.3s ease-in-out;
 }
