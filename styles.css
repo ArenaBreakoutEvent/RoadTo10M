@@ -220,3 +220,240 @@ p.te {
 .jornadas-extra {
   transition: all 0.3s ease-in-out;
 }
+
+@font-face {
+  font-family: 'Vectro-Bold';
+  src: url('./fonts/VECTRO-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avionic-Book';
+  src: url('./fonts/Fontspring-DEMO-avioniccond-book.otf') format('truetype');
+}
+
+.canje-puntos {
+  background-color: #00060a; /* Fondo oscuro */
+  padding: 30px;
+  border-radius: 10px; /* Bordes redondeados */
+  margin: 20px;
+  text-align: center;
+  color: white;
+}
+
+.titulo-canje {
+  font-family: 'Vectro-Bold', sans-serif;
+  font-size: 2rem;
+  color: #FF4500; /* Naranja para destacar */
+  margin-bottom: 20px;
+}
+
+.opcion-canje {
+  background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+  border: 1px solid #FF4500; /* Borde naranja */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.opcion-canje:hover {
+  background: #FF4500; /* Cambia el fondo al pasar el cursor */
+  transform: translateY(-5px); /* Eleva ligeramente */
+}
+
+.titulo-opcion {
+  font-family: 'Vectro-Bold', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: white; /* Texto blanco */
+}
+
+.descripcion-opcion {
+  font-family: 'Avionic-Book', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgb(181, 219, 217); /* Azul claro */
+}
+
+/* Contenedor de la tabla */
+.tabla-resultados {
+  background: #00060a;
+  border: 1px solid #FF4500;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Título de la tabla */
+.titulo-tabla {
+  font-family: 'Vectro-Bold', sans-serif;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Tabla */
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.tabla th,
+.tabla td {
+  border: 1px solid rgba(255, 69, 0, 0.7);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-family: 'Avionic-Book', sans-serif;
+}
+
+.tabla th {
+  background-color: rgba(255, 69, 0, 0.7);
+  font-family: 'Vectro-Bold', sans-serif;
+}
+
+/* Filas de jugadores */
+.fila-jugador {
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.fila-jugador:hover {
+  background: rgba(255, 69, 0, 0.7);
+}
+
+/* Detalles del jugador */
+.detalles-jugador {
+  display: none;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.detalle-puntos {
+  padding: 10px;
+  font-family: 'Avionic-Book', sans-serif;
+  color: white;
+}
+
+.detalle-puntos ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.detalle-puntos li {
+  margin: 5px 0;
+}
+
+.detalle-puntos {
+  text-align: left;
+}
+
+.nar {
+  color: rgb(235, 185, 169);
+}
+
+footer {
+  background-image: url('/img/fondo3.png');
+  background-size: cover;
+  background-position: center;
+  color: rgb(181, 219, 217); /* Cambiado a azul */
+  padding: 50px 0;
+  font-family: 'Avionic-Book', sans-serif;
+}
+
+/* Centrado del logo */
+.footer-logo {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Estilo de los títulos y texto */
+.footer-section h2 {
+  color: rgb(181, 219, 217);
+  font-family: 'Vectro-Bold', sans-serif;
+}
+
+.footer-section p {
+  color: rgb(181, 219, 217); /* Cambiado a azul */
+}
+
+/* Estilo de los enlaces */
+.footer-links {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links a {
+  display: block;
+  color: rgb(181, 219, 217); /* Cambiado a azul */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo del botón Discord */
+.discord-button {
+  margin-top: 15px;
+  background-color: #7289da;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  display: none; /* Inicialmente oculto */
+}
+
+.discord-button:hover {
+  background-color: #5b6eae;
+}
+
+/* Estilo para el correo */
+.footer-contact p {
+  color: rgb(181, 219, 217); /* Cambiado a azul */
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+/* Estilo para las secciones en móvil */
+@media (max-width: 767px) {
+  .footer-section {
+      margin-bottom: 15px;
+  }
+
+  .footer-section h2 {
+      font-size: 1.2rem;
+  }
+
+  .footer-links a {
+      font-size: 1rem;
+      text-align: left;
+  }
+}
+
+/* Estilo para las secciones en PC */
+@media (min-width: 768px) {
+  .footer-section {
+      display: inline-block;
+      margin-right: 30px;
+  }
+
+  .footer-section h2 {
+      font-size: 2rem;
+  }
+
+  .footer-links a {
+      font-size: 1.4rem;
+  }
+}
+
+.abc {
+  
+}
